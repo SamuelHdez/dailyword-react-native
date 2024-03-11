@@ -28,7 +28,7 @@ const VirtualKeyboard = ({ onKeyPress, letterStates }) => {
                             key={key}
                             style={[styles.key, key.length > 1 ? styles.specialKey : {}, getKeyStyle(key)]}
                             onPress={() => onKeyPress(key)}>
-                            <Text style={styles.keyText}>{key}</Text>
+                            <Text style={[styles.keyText, getKeyStyle(key)]}>{key}</Text>
                         </TouchableOpacity>
                     ))}
                 </View>
@@ -52,11 +52,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 2,
-        borderWidth: 1,
-        borderColor: '#000',
         borderRadius: 4,
         padding: 5,
         minWidth: 30,
+        backgroundColor: '#e2e8f0',
     },
     specialKey: {
         minWidth: keySize * 2.5,
@@ -64,16 +63,20 @@ const styles = StyleSheet.create({
     keyText: {
         fontSize: 18,
         textAlign: 'center',
+        color: '#000000DE',
     },
 
     correctKey: {
-        backgroundColor: 'green',
+        backgroundColor: '#43a047',
+        color: '#fff',
     },
     presentKey: {
-        backgroundColor: 'orange',
+        backgroundColor: '#e4a81d',
+        color: '#fff',
     },
     absentKey: {
-        backgroundColor: 'red',
+        backgroundColor: '#757575',
+        color: '#fff',
     },
 });
 
