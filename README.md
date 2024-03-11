@@ -1,23 +1,54 @@
 
 # Daily Word
 
-A React Native app implementing a Wordle-like game with daily challenges.
+DailyWord is a mobile implementation of the popular word guessing game, Wordle. Built with React Native and Expo, this game challenges players to guess a target word in six tries or less. Each attempt provides visual feedback, marking each letter as correct in position, correct in word but incorrect position, or completely missing the target word.
+
+![Daily Word Banner](https://github.com/SamuelHdez/dailyword-react-native/blob/main/resources/banner.png)
+
+## Features
+- **Adaptive Interface:** Designed to adapt to a variety of screen sizes for an optimal user experience on mobile devices.
+- **Virtual Keyboard:** An interactive virtual keyboard that reflects the state of the letters based on the player's attempts.
+- **Visual Feedback:** Word tiles are colored to reflect the accuracy of the player's guesses, providing clear clues towards the solution.
+- **Multi-Device Support:** Compatible with both iOS and Android thanks to the flexibility of React Native.
+
+## Technologies Used
+
+- React Native
+- Expo
+- TypeScript
 
 
 ## Installation
 
-Install dependencies with yarn or npm and run the application with expo.
+1. **Clone the Repository:**
 
-```bash
-  yarn
-  npx expo start
-```
-    
-## Built with
+   ```
+   git clone https://github.com/SamuelHdez/dailyword-react-native.git
+   cd dailyword
+   ```
 
-![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+2. **Install Dependencies:**
 
-![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
+   Using npm:
+
+   ```
+   npm install
+   ```
+
+   Or, if you prefer to use yarn:
+
+   ```
+   yarn install
+   ```
+
+3. **Run the Project:**
+
+   ```
+   npx expo start
+   ```
+
+   This will launch the Metro Bundler in your browser. You can then run the app on an emulator or on your device through the Expo app.
+
 
 
 ## Authors
@@ -27,5 +58,6 @@ Install dependencies with yarn or npm and run the application with expo.
 
 ## License
 
+This project is licensed under MIT License. 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
